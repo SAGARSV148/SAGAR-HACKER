@@ -1,0 +1,414 @@
+<html><title>Hacked By SAGAR The HACKER</title>
+ 
+<style type="text/css">
+body {
+    background-image: url(http://i1004.photobucket.com/albums/af163/imnu11/openbg.gif);
+    padding: 0;
+    font-color: green;
+  }
+right {
+    top: 0% !important;
+    left: 0% !important;
+  }
+</style>
+<div id="right" align="left">
+<pre><font color="green">
+ 
+888    888        d8888  .d8888b.  888    d8P  8888888888 8888888b.  
+888    888       d88888 d88P  Y88b 888   d8P   888        888  "Y88b
+888    888      d88P888 888    888 888  d8P    888        888    888
+8888888888     d88P 888 888        888d88K     8888888    888    888
+888    888    d88P  888 888        8888888b    888        888    888
+888    888   d88P   888 888    888 888  Y88b   888        888    888
+888    888  d8888888888 Y88b  d88P 888   Y88b  888        888  .d88P
+888    888 d88P     888  "Y8888P"  888    Y88b 8888888888 8888888P"  
+<link rel="SHORTCUT ICON" <img src="https://llwproductions.files.wordpress.com/2012/02/anonymous.png"/>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<meta name="keywords" content="SAGAR The HACKER, SAGAR Cyber Army, hack"/>
+<meta name="description" content="Hacked By SAGAR The HACKER">
+<meta name="author" content="Hacked By SAGAR The HACKER">
+<meta name="googlebot" content="all,index,follow">
+<meta name="robots" content="index, follow"><style type="text/css">
+.kedip {
+-webkit-animation-name: blinker;
+-webkit-animation-duration: 3s;
+-webkit-animation-timing-function: linear;
+-webkit-animation-iteration-count: infinite;
+-moz-animation-name: blinker;
+-moz-animation-duration: 2s;
+-moz-animation-timing-function: linear;
+-moz-animation-iteration-count: infinite;
+ animation-name: blinker;
+ animation-duration: 1s;
+ animation-timing-function: linear;
+ animation-iteration-count: infinite;
+ color: #8d8787;
+}
+@-moz-keyframes blinker {  
+ 0% { opacity: 1.0; }
+ 50% { opacity: 0.0; }
+ 100% { opacity: 1.0; }
+ }
+@-webkit-keyframes blinker {  
+ 0% { opacity: 1.0; }
+ 50% { opacity: 0.0; }
+ 100% { opacity: 1.0; }
+ }
+@keyframes blinker {  
+ 0% { opacity: 1.0; }
+ 50% { opacity: 0.0; }
+ 100% { opacity: 1.0; }
+ }
+body {
+    color: #ececea;
+    font-family: 'Gloria Hallelujah', cursive;
+    text-align: left;
+    background-color: #323a45;
+    font-size: 10pt;
+}
+a:link, a:visited {
+    color: red;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+a:hover, a:active{
+    color: maroon;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+img {
+onmousedown:stop;
+animation-name: rotate ;
+animation-duration: 5s;
+animation-play-state: running;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+opacity: 1.0;filter: alpha(opacity=50);} img:hover {opacity: 1.0;filter: alpha(opacity=100);}
+@keyframes rotate{
+10% {transform:rotateY(36deg)}
+20% {transform:rotateY(72deg)}
+30% {transform:rotateY(108deg)}
+40% {transform:rotateY(144deg)}
+50% {transform:rotateY(180deg)}
+60% {transform:rotateY(216deg)}
+70% {transform:rotateY(252deg)}
+80% {transform:rotateY(288deg)}
+90% {transform:rotateY(324deg)}
+100% {transform:rotateY(360deg)}
+}
+</style>
+<script type="text/javascript">
+var snowmax=35
+var snowcolor=new Array("#AAAACC","#DDDDFF","#CCCCDD","#F3F3F3","#F0FFFF")
+var snowtype=new Array("Arial Black","Arial Narrow","Times","Comic Sans MS")
+var snowletter="*"
+var sinkspeed=0.6
+var snowmaxsize=22
+var snowminsize=8
+var snowingzone=1
+ 
+/* Hacked By SAGAR The HACKER
+Jangan edit2 dibawah ini -_- */
+var snow=new Array()
+var marginbottom
+var marginright
+var timer
+var i_snow=0
+var x_mv=new Array();
+var crds=new Array();
+var lftrght=new Array();
+var browserinfos=navigator.userAgent
+var ie5=document.all&&document.getElementById&&!browserinfos.match(/Opera/)
+var ns6=document.getElementById&&!document.all
+var opera=browserinfos.match(/Opera/)  
+var browserok=ie5||ns6||opera
+function randommaker(range) {
+rand=Math.floor(range*Math.random())
+return rand
+}
+function initsnow() {
+if (ie5 || opera) {
+marginbottom = document.body.clientHeight
+marginright = document.body.clientWidth
+}
+else if (ns6) {
+marginbottom = window.innerHeight
+marginright = window.innerWidth
+}
+var snowsizerange=snowmaxsize-snowminsize
+for (i=0;i<=snowmax;i++) {
+crds[i] = 0;                      
+lftrght[i] = Math.random()*15;        
+x_mv[i] = 0.03 + Math.random()/10;
+snow[i]=document.getElementById("s"+i)
+snow[i].style.fontFamily=snowtype[randommaker(snowtype.length)]
+snow[i].size=randommaker(snowsizerange)+snowminsize
+snow[i].style.fontSize=snow[i].size
+snow[i].style.color=snowcolor[randommaker(snowcolor.length)]
+snow[i].sink=sinkspeed*snow[i].size/5
+if (snowingzone==1) {snow[i].posx=randommaker(marginright-snow[i].size)}
+if (snowingzone==2) {snow[i].posx=randommaker(marginright/2-snow[i].size)}
+if (snowingzone==3) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/4}
+if (snowingzone==4) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/2}
+snow[i].posy=randommaker(2*marginbottom-marginbottom-2*snow[i].size)
+snow[i].style.left=snow[i].posx
+snow[i].style.top=snow[i].posy
+}
+movesnow()
+}
+function movesnow() {
+for (i=0;i<=snowmax;i++) {
+crds[i] += x_mv[i];
+snow[i].posy+=snow[i].sink
+snow[i].style.left=snow[i].posx+lftrght[i]*Math.sin(crds[i]);
+snow[i].style.top=snow[i].posy
+if (snow[i].posy>=marginbottom-2*snow[i].size || parseInt(snow[i].style.left)>(marginright-3*lftrght[i])){
+if (snowingzone==1) {snow[i].posx=randommaker(marginright-snow[i].size)}
+if (snowingzone==2) {snow[i].posx=randommaker(marginright/2-snow[i].size)}
+if (snowingzone==3) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/4}
+if (snowingzone==4) {snow[i].posx=randommaker(marginright/2-snow[i].size)+marginright/2}
+snow[i].posy=0
+}
+}
+var timer=setTimeout("movesnow()",50)
+}
+for (i=0;i<=snowmax;i++) {
+document.write("<span id='s"+i+"' style='position:absolute;top:-"+snowmaxsize+"'>"+snowletter+"</span>")
+}
+if (browserok) {
+window.onload=initsnow
+}
+</script>
+<script type="text/javascript">
+// Hacked By SAGAR The HACKER
+TypingText = function(element, interval, cursor, finishedCallback) {
+if((typeof document.getElementById == "undefined") || (typeof
+element.innerHTML == "undefined")) {
+this.running = true;
+return;
+}
+this.element = element;
+this.finishedCallback = (finishedCallback ? finishedCallback : function() {
+return; });
+this.interval = (typeof interval == "undefined" ? 100 : interval);
+this.origText = this.element.innerHTML;
+this.unparsedOrigText = this.origText;
+this.cursor = (cursor ? cursor : "");
+this.currentText = "";
+this.currentChar = 0;
+this.element.typingText = this;
+if(this.element.id == "") this.element.id = "typingtext" +
+TypingText.currentIndex++;
+TypingText.all.push(this);
+this.running = false;
+this.inTag = false;
+this.tagBuffer = "";
+this.inHTMLEntity = false;
+this.HTMLEntityBuffer = "";
+}
+TypingText.all = new Array();
+TypingText.currentIndex = 0;
+TypingText.runAll = function() {
+for(var i = 0; i < TypingText.all.length; i++) TypingText.all[i].run();
+}
+TypingText.prototype.run = function() {
+if(this.running) return;
+if(typeof this.origText == "undefined") {
+setTimeout("document.getElementById('" + this.element.id +
+"').typingText.run()", this.interval);
+return;
+}
+if(this.currentText == "") this.element.innerHTML = "";
+if(this.currentChar < this.origText.length) {
+if(this.origText.charAt(this.currentChar) == "<" && !this.inTag) {
+this.tagBuffer = "<";
+this.inTag = true;
+this.currentChar++;
+this.run();
+return;
+}
+else if(this.origText.charAt(this.currentChar) == ">" && this.inTag) {
+this.tagBuffer += ">";
+this.inTag = false;
+this.currentText += this.tagBuffer;
+this.currentChar++;
+this.run();
+return;
+}
+else if(this.inTag) {
+this.tagBuffer += this.origText.charAt(this.currentChar);
+this.currentChar++;
+this.run();
+return;
+}
+else if(this.origText.charAt(this.currentChar) == ">" && this.inTag) {
+this.tagBuffer += ">";
+this.inTag = false;
+this.currentText += this.tagBuffer;
+this.currentChar++;
+this.run();
+return;
+}
+else if(this.inTag) {
+this.tagBuffer += this.origText.charAt(this.currentChar);
+this.currentChar++;
+this.run();
+return;
+}
+else if(this.origText.charAt(this.currentChar) == "&" && !
+this.inHTMLEntity) {
+this.HTMLEntityBuffer = "&";
+this.inHTMLEntity = true;
+this.currentChar++;
+this.run();
+return;
+} else if(this.origText.charAt(this.currentChar) == ";" &&
+this.inHTMLEntity) {
+this.HTMLEntityBuffer += ";";
+this.inHTMLEntity = false;
+this.currentText += this.HTMLEntityBuffer;
+this.currentChar++;
+this.run();
+return;
+} else if(this.inHTMLEntity) {
+this.HTMLEntityBuffer += this.origText.charAt(this.currentChar);
+this.currentChar++;
+this.run();
+return;
+} else {
+this.currentText += this.origText.charAt(this.currentChar);
+}
+this.element.innerHTML = this.currentText;
+this.element.innerHTML += (this.currentChar < this.origText.length - 1 ?
+(typeof this.cursor == "function" ? this.cursor(this.currentText) : this.cursor) :
+"");
+this.currentChar++;
+setTimeout("document.getElementById('" + this.element.id +
+"').typingText.run()", this.interval);
+} else {
+this.currentText = "";
+this.currentChar = 0;
+this.running = false;
+this.finishedCallback();
+}
+}
+</script>
+<script language='javascript'>
+if (document.all||document.getElementById){
+var thetitle=document.title
+document.title=''}
+var data="01";
+var done=1;
+function statusIn(text){decrypt(text,3,40);}
+function statusOut(){self.status='';done=1;}
+function decrypt(text, max, delay){
+if (done){done = 0;
+rantit(text, max, delay, 0, max);
+}
+}
+function rantit(text, runs_left, delay, charvar, max){
+if (!done){
+runs_left = runs_left - 1;
+var status = text.substring(0,charvar);
+for(var current_char = charvar; current_char < text.length; current_char++){
+status += data.charAt(Math.round(Math.random()*data.length));
+}
+document.title = status;
+var rerun = "rantit('" + text + "'," + runs_left + "," + delay + "," + charvar + "," + max + ");"
+var new_char = charvar + 1;
+var next_char = "rantit('" + text + "'," + max + "," + delay + "," + new_char + "," + max + ");"
+if(runs_left > 0){setTimeout(rerun, delay);}
+else{if (charvar < text.length){setTimeout(next_char, Math.round(delay*(charvar+3)/(charvar+1)));}
+else
+{done = 1;}}}}
+if (document.all||document.getElementById)
+statusIn(thetitle)
+</script>
+<script>alert("SAGAR Cyber Army !!")</script>
+<body onkeydown="return false;" onmousedown="return false;">
+<br>
+<img src='https://llwproductions.files.wordpress.com/2012/02/anonymous.png' align="right" style="opacity:0.5; width:500px; height:500px; ">
+<pre>
+</pre>
+<p id="pesan" style='font-size:10pt; font-family: monospace;'>
+root@SAGAR The HACKER:~# > cd C:/SAGAR-Cyber-Army/shell.php<br>
+C:/SAGAR/Cyber/Army/php > php SAGAR-HACKER.php<br><br>
+echo " <font color="red">~\</font> Message <font color="red">/~</font> ";<br>
+echo " Ur site has been H4Ck3D by <b><a target='blank' href='https://www.facebook.com/SAGARcyberarmy'>SAGAR The HACKER</a></b>";<br>
+echo " No data's leaked, no file's stealed, no system's changed ";<br>
+echo " Just testing ur site :P ";<br>
+echo " I warn you, cause I'm not the only one hacker in this fvckn' world. ";<br>
+<br>
+echo " <font color="red">~\</font>SAGAR The HACKER HERE<font color="red">/~</font> ";<br>
+echo " <b><a target='blank' href='https://www.facebook.com/SAGARcyberarmy'>SAGAR The HACKER</a>";<br>
+echo " <b>Take this as a warning, please improve your security, otherwise your website <b>will</b> be malisciously cyber-raped!";<br>
+-------------------------------------------------------------------------------------------<br>
+echo " <font color="red">~\</font> Greetz <font color="red">/~</font> ";<br>
+echo " SAGAR Cyber Army";<br>
+-------------------------------------------------------------------------------------------<br>
+<a href='https://www.facebook.com/SAGARcyberarmy' target="blank">CLICK ME</a>
+echo " Have a nice day ^.^ ";
+</p>
+<script type="text/javascript">
+new TypingText(document.getElementById("pesan"), 70, function(i){ var ar
+= new Array("|","|","|","|"); return "" + ar[i.length % ar.length]; });
+//Type out examples:
+TypingText.runAll();
+</script>
+<script language=javascript>
+<!--
+ 
+//Disable right mouse click Script
+ 
+var message="Hacked By SAGAR The HACKER!";
+ 
+ 
+///////////////////////////////////
+function clickIE4(){
+if (event.button==2){
+alert(message);
+return false;
+}
+}
+ 
+function clickNS4(e){
+if (document.layers||document.getElementById&&!document.all){
+if (e.which==2||e.which==3){
+alert(message);
+return false;
+}
+}
+}
+ 
+if (document.layers){
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS4;
+}
+else if (document.all&&!document.getElementById){
+document.onmousedown=clickIE4;
+}
+ 
+document.oncontextmenu=new Function("alert(message);return false")
+ 
+// -->
+</script>
+ 
+<!-- start disable copy paste --><script src='demo-to-prevent-copy-paste-on-blogger_files/googleapis.js'></script><script type='text/javascript'> if(typeof document.onselectstart!="undefined" ) {document.onselectstart=new Function ("return false" ); } else{document.onmousedown=new Function ("return false" );document.onmouseup=new Function ("return false"); } </script><!-- End disable copy paste --></!->
+
+
+<html><title>Hacked By M<html><title>Hacked By SAGAR The HACKER</title>
+ 
+<style type="text/css">
+body {
+    background-image: url(http://i1004.photobucket.com/albums/af163/imnu11/openbg.gif);
+    padding: 0;
+    font-color: green;
+  }
+right {
+    top: 0% !important;
+    left: 0% !important;
+  }
+</style>
+<div id="right" align="left">
+<pre><font color="green">
